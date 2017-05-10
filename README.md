@@ -4,5 +4,4 @@
     It's able to retrieve specific class schedule from a Excel sheet. 
 
 # Search Routine by Semester
-    
 # Search Routine by Course Code
