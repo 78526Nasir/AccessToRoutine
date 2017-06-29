@@ -16,7 +16,7 @@
 ### Print
 ![Printed_Result](https://github.com/78526Nasir/AccessToRoutine/blob/master/images/Printed_Result.png)
 
-**To know more go to the Wiki Section**
+> **To know more, go to the <a href="https://github.com/78526Nasir/AccessToRoutine/wiki">Wiki</a> Section**
 
 ## Licence & Copyright 
 This project is LICENCE under <a href=https://github.com/78526Nasir/AccessToRoutine/blob/master/LICENCE.md>Apache-2.0</a>
