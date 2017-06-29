@@ -1,6 +1,6 @@
 # Access To Routine
 
-`A2R` It is a searching software, which can find out class schedule/routine for any semester any section student of my University. It basically read the `Excel (.xlsx)` routine file and than filter all the data. In this software anyone can find routine in two ways one is `Find Routine By Course Code` another is `Find Routine By Semester`. After getting result anyone can also `print` the generated result. 😄
+`A2R` It is a **searching software**, which can find out class `schedule/routine` for any `semester` any `section` student of my **University**. It basically read the `Excel (.xlsx)` routine file and than filter all the data. In this software user can find routine in two ways one is `Find Routine By Course Code` another is `Find Routine By Semester`. After getting result user can also `print` the generated result. 😄
 
 # Main Page
 ![Main_Page](https://github.com/78526Nasir/AccessToRoutine/blob/master/images/Main_Page.png)
