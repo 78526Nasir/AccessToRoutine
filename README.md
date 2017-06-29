@@ -19,4 +19,4 @@
 ## Licence & Copyright 
 This project is LICENCE under <a href=https://github.com/78526Nasir/AccessToRoutine/blob/master/LICENCE.md>Apache-2.0</a>
 
-![](https://github.com/78526Nasir) &copy; 2017
+<a href="https://github.com/78526Nasir">Nasir Islam Sujan</a> &copy; 2017
