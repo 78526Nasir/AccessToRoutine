@@ -1,4 +1,4 @@
-package test5;
+package accesstoroutine.fall_2017;
 
 public class RoutineInfo {
     private String day;

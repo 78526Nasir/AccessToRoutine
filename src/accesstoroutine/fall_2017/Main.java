@@ -1,4 +1,4 @@
-package test5;
+package accesstoroutine.fall_2017;
 
 import java.io.InputStream;
 import java.util.Scanner;
@@ -7,27 +7,12 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class Main {
     /*
-     * all routine Objects !
+     * routine Objects !
     */
     static RoutineInfo routineInfo[] = new RoutineInfo[1000];
+    
     static int countRoutineInfo=0;
-    
-    /*  The Main Sheet */
-    static XSSFSheet sheet;
-    
-    // Effective From 8 October, 2016 Classroutine_Fall_2016 v 2.4.xlsx"
-    InputStream f = getClass().getResourceAsStream("Classroutine_Fall_2016 v 2.4.xlsx");
-    
-    public void importRoutine(){
-       try{
-           XSSFWorkbook wbook = new XSSFWorkbook(f);
-           sheet=wbook.getSheet("Sheet2");
-       }catch(Exception e){
-           
-       }
-    }
-    
-    static int cellNumberForRoomID=0;  // to do // update +=3
+    static int cellNumberForRoomID=0;   // update +=3
     static final int TIME_START_INDEX=5; // FIXED
     
     static final int DEFAULT_ROOM_CELL_ID=0;
@@ -42,77 +27,27 @@ public class Main {
     
     // scanner object !
     static Scanner scanf = new Scanner(System.in);
+    
+    // all data store here..
     static String bigData[]= new String[1000];
     
-    /*
-     * @ Program Will be start from Here !
-     * @The Main Method 
-    */
-//    public static void main(String[] args) {
-////        importRoutine();
-////        setNameOfTheDay();
-//        
-//        Main m = new Main();
-//        m.trySomething();
-//        saturdayFirstSchedule();
-//        
-//        System.out.println("****************************************************** Routine Info ********************************************************");
-//        System.out.println("----------------------------------------------------------------------------------------------------------------------------");
-//        System.out.println("\n\tClass Room\t\tCourse Code\t\tTeacher initial\t\tDay\t\tTime");
-//        System.out.println("----------------------------------------------------------------------------------------------------------------------------");
-//        int sum = 1;
-//        for(int i=0;i<countRoutineInfo;i++){
-//            bigData[i]=(sum++)+"\t"+routineInfo[i].getClassRoomNumber()+"\t"+routineInfo[i].getCourseCode()+"\t"+routineInfo[i].getTeacherInitial()+"\t"+routineInfo[i].getDay()+"\t"+routineInfo[i].getTime();
-////            System.out.printf("%d %15s\t\t%15s\t\t\t%10s\t%15s\t\t%-30s\n",sum++,routineInfo[i].getClassRoomNumber(),routineInfo[i].getCourseCode(),routineInfo[i].getTeacherInitial(),routineInfo[i].getDay(),routineInfo[i].getTime());
-//      
-//        }
-//        
-//    }
-
     
-       
-    /*
-     * import the routine file (.xlsx) from my computer !
-    */
-//    public static void importRoutine(){
-//        File f = new File("ClassRoutine_Fall15_V1_NoColor.xlsx");
-//        try {
-//            FileInputStream fileInputStream=new FileInputStream(f);
-//            XSSFWorkbook workbook = new XSSFWorkbook(fileInputStream);
-//            sheet = workbook.getSheet("Sheet1");
-//        } catch (Exception e) {
-//            System.out.println(e);
-//        }
-//    }
+    /*  The Main Sheet */
+    static XSSFSheet sheet;
     
-    /*
-     * Retrive Some information from the Rouine File !
-    */
-//    public static void getRoutineInfo(){
-//        String routineInfo;
-//        routineInfo=sheet.getRow(0).getCell(0).getStringCellValue();
-//        System.out.println(routineInfo);
-//        routineInfo=sheet.getRow(21).getCell(0).getStringCellValue();
-//        System.out.println(routineInfo);
-//        
-//    }
-
-   
-    /*
-     * This method will check the day! then Call apropriate method according ti the day! 
-    */
-//    public static void checkDayAndCallSchedule(){
-//        for(String day : days){
-//            if(day.equalsIgnoreCase("Saturday")){
-//                saturdayFirstSchedule();
-//                
-//                
-//            }
-//            
-//           // dayCount++; // update day
-//        }
-//    }
     
+    // EEffective From 14 October, 2017"
+    InputStream f = getClass().getResourceAsStream("SWE-Classroutine-Fall-2017-V_5.xlsx");
+    
+    public void importRoutine(){
+       try{
+           XSSFWorkbook wbook = new XSSFWorkbook(f);
+           sheet=wbook.getSheet("Sheet1");
+       }catch(Exception e){
+           // catch the exception
+       }
+    }
+      
    
     
     /*
@@ -402,8 +337,6 @@ public class Main {
             flagIndexForRoomID++;
         }
     }
-    
-    
     
     
     
@@ -1271,7 +1204,7 @@ public class Main {
             
             String retriveTempClassRoomNumber=sheet.getRow(classRoomStartIndex+flagIndexForRoomID).getCell(cellNumberForRoomID).getStringCellValue();
             
-            if(forTerminate.contains("Thrusday")){
+            if(forTerminate.contains("Thursday")){
                 cellNumber+=3;  
                 cellNumberForRoomID+=3;
                 timeIndex+=3;  
@@ -1317,7 +1250,7 @@ public class Main {
             
             String retriveTempClassRoomNumber=sheet.getRow(classRoomStartIndex+flagIndexForRoomID).getCell(cellNumberForRoomID).getStringCellValue();
             
-            if(forTerminate.contains("Thrusday")){
+            if(forTerminate.contains("Thursday")){
                 cellNumber+=3;  
                 cellNumberForRoomID+=3;
                 timeIndex+=3;  
@@ -1364,7 +1297,7 @@ public class Main {
             
             String retriveTempClassRoomNumber=sheet.getRow(classRoomStartIndex+flagIndexForRoomID).getCell(cellNumberForRoomID).getStringCellValue();
             
-            if(forTerminate.contains("Thrusday")){
+            if(forTerminate.contains("Thursday")){
                 cellNumber+=3;  
                 timeIndex+=3;  
                 cellNumberForRoomID+=3;
@@ -1411,7 +1344,7 @@ public class Main {
             String forTerminate=sheet.getRow(classRoomStartIndex+flagIndexForRoomID).getCell(DEFAULT_ROOM_CELL_ID).getStringCellValue();
             String retriveTempClassRoomNumber=sheet.getRow(classRoomStartIndex+flagIndexForRoomID).getCell(cellNumberForRoomID).getStringCellValue();
 
-            if(forTerminate.contains("Thrusday")){
+            if(forTerminate.contains("Thursday")){
                 cellNumber+=3;  
                 timeIndex+=3;  
                 cellNumberForRoomID+=3;
@@ -1458,7 +1391,7 @@ public class Main {
             
             String retriveTempClassRoomNumber=sheet.getRow(classRoomStartIndex+flagIndexForRoomID).getCell(cellNumberForRoomID).getStringCellValue();
             
-            if(forTerminate.contains("Thrusday")){
+            if(forTerminate.contains("Thursday")){
                 cellNumber+=3;  
                 timeIndex+=3;  
                 flagIndexForRoomID=0; // reset
@@ -1505,7 +1438,7 @@ public class Main {
             
             String retriveTempClassRoomNumber=sheet.getRow(classRoomStartIndex+flagIndexForRoomID).getCell(cellNumberForRoomID).getStringCellValue();
             
-            if(forTerminate.contains("Thrusday")){
+            if(forTerminate.contains("Thursday")){
                 classRoomEndIndex=classRoomStartIndex+flagIndexForRoomID+1;
                 cellNumber=1;  // reset
                 timeIndex=0 ;  // reset
