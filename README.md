@@ -19,6 +19,6 @@
 > **To know more, go to the <a href="https://github.com/78526Nasir/AccessToRoutine/wiki/How-to-run">Wiki</a> Section**
 
 ## Licence & Copyright 
-This project is LICENCE under <a href="https://github.com/78526Nasir/AccessToRoutine/blob/master/LICENSE">MIT</a>
+This project is LICENCE under [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 <a href="https://github.com/78526Nasir">Nasir Islam Sujan</a> &copy; 2016
