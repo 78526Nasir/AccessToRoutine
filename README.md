@@ -16,7 +16,6 @@
 ### Print
 ![Printed_Result](https://github.com/78526Nasir/AccessToRoutine/blob/master/images/Printed_Result.png)
 
-> **To know more, go to the <a href="https://github.com/78526Nasir/AccessToRoutine/wiki/How-to-run">Wiki</a> Section**
 
 ## Licence & Copyright 
 This project is LICENCE under [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
