@@ -11,6 +11,11 @@ Find Routine By Semester. After getting result user can also print the generated
 * Project Documentation [link](https://sites.google.com/diu.edu.bd/a2r/home)
 * Video Documentation [link](https://www.youtube.com/watch?v=658dF4Ml7S8)
 
+### Web Version
+* Repository [link](https://github.com/78526/A2R)
+* Documentation [link](https://sites.google.com/view/a2r)
+* Video Documentation [link](https://youtu.be/TXmE8lAUgvg)
+
 
 
 # Main Page
